@@ -58,3 +58,27 @@
     font-size: 14px;
     font-weight: 500;
 }
+.navbar{
+    height:40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1f4985;
+}
+.navbar div{
+    width:153px;
+    padding:10px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+}
+.navbar>div:hover{
+    background-color: #e42529;
+}
+.dropDown{
+    height:350px;
+    width:95%;
+    margin: auto;
+    border: 1px solid red;
+}
+
