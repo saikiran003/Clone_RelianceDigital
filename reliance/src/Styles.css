@@ -76,9 +76,27 @@
     background-color: #e42529;
 }
 .dropDown{
-    height:350px;
     width:95%;
     margin: auto;
-    border: 1px solid red;
+    display: flex;
+    gap:20px;
+    padding: 10px 10px 0px 30px;
+    background-color: #1f4985;
+    z-index: 1;
+}
+.dropDown>div{
+    width:auto;
+    padding: 0.5%;
+}
+.first{
+    line-height: 80%;
+}
+.productsName{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+.productsName:hover{
+    text-decoration: underline;
 }
 

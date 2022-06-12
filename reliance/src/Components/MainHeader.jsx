@@ -1,6 +1,8 @@
 import React from "react";
+import { useState } from "react";
 
 const MainHeader = () => {
+  const [search,setSearch] = useState("")
   return (
     <div className="mainHeader">
       <div>
@@ -13,12 +15,12 @@ const MainHeader = () => {
         <input
           type="text"
           placeholder="Find your favorite products"
-          value=""
+          value={search} onChange={(e)=>setSearch(e.target.value)}
         />
         <button
           type="button"
         >
-          <i class="fa fa-search" style={{color: "rgb(187, 187, 187)"}}></i>
+          <i className="fa fa-search" style={{color: "rgb(187, 187, 187)"}}></i>
         </button>
       </div>
       {/* <div>
@@ -28,11 +30,11 @@ const MainHeader = () => {
         <div className="subMainHeader">Select your location</div>
         <div className="vl"></div>
         <div className="subMainHeader">
-          <i class="fa fa-shopping-cart" aria-hidden="true" style={{color:"white",font:"20px",marginRight:"10px"}}></i>Cart
+          <i className="fa fa-shopping-cart" aria-hidden="true" style={{color:"white",font:"20px",marginRight:"10px"}}></i>Cart
         </div>
         <div className="vl"></div>
         <div className="subMainHeader">
-          <i class="fa fa-user" aria-hidden="true" style={{color:"white",font:"20px",marginRight:"10px"}}></i>Login
+          <i className="fa fa-user" aria-hidden="true" style={{color:"white",font:"20px",marginRight:"10px"}}></i>Login
         </div>
       </div>
     </div>
