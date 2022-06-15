@@ -6,7 +6,9 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 
 function App() {
   return (
@@ -14,10 +16,10 @@ function App() {
       <Header />
       <MainHeader />
       <Navbar />
-    
-      
       <Routes>
         <Route default path="/" element={<Home />} />
+        <Route path="login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </div>
