@@ -9,6 +9,7 @@ import Home from "./Pages/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import Televisions from "./Pages/Televisions";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route default path="/" element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/television" element={<Televisions/>}/>
       </Routes>
       <Footer />
     </div>

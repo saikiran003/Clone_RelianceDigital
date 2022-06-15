@@ -98,7 +98,7 @@ const Navbar = () => {
               <Link to="/smartphones" className="productsName">
                 <h4>Televisions</h4>
               </Link>
-              <Link to="/smartphones" className="productsName">
+              <Link to="/television" className="productsName">
                 <p>Smart TVs</p>
               </Link>
               <Link to="/smartphones" className="productsName">
