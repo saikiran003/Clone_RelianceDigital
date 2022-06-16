@@ -3,18 +3,18 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer">
-      <footer class="footer no-print">
-        <div class="footer__links pt__40">
-          <div class="footer__container">
+      <footer className="no-print">
+        <div className="footer__links pt__40">
+          <div className="footer__container">
             <div
-              class="blk"
+              className="blk"
               style={{ display: "flex", justifyContent: "space-around" }}
             >
-              <div class="blk__xs__6 blk__sm__3 fcol">
-                <div class="footer__linksTitle">
+              <div className="blk__xs__6 blk__sm__3 fcol">
+                <div className="footer__linksTitle">
                   <h3>PRODUCT CATEGORIES</h3>
                 </div>
-                <div class="footer__listLinks">
+                <div className="footer__listLinks">
                   <ul>
                     <li>
                       <a
@@ -118,11 +118,11 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div class="blk__xs__6 blk__sm__3 fcol">
-                <div class="footer__linksTitle" style={{marginLeft:"3%"}}>
+              <div className="blk__xs__6 blk__sm__3 fcol">
+                <div className="footer__linksTitle" style={{marginLeft:"3%"}}>
                   <h3>SITE INFO</h3>
                 </div>
-                <div class="footer__listLinks">
+                <div className="footer__listLinks">
                   <ul>
                     <li>
                       <a
@@ -193,11 +193,11 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div class="blk__xs__6 blk__sm__3 fcol">
-                <div class="footer__linksTitle" style={{marginLeft:"3%"}}>
+              <div className="blk__xs__6 blk__sm__3 fcol">
+                <div className="footer__linksTitle" style={{marginLeft:"3%"}}>
                   <h3>RESOURCE CENTER</h3>
                 </div>
-                <div class="footer__listLinks">
+                <div className="footer__listLinks">
                   <ul>
                     <li>
                       <a
@@ -252,11 +252,11 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div class="blk__xs__6 blk__sm__3 fcol">
-                <div class="footer__linksTitle" style={{marginLeft:"-3%"}}>
+              <div className="blk__xs__6 blk__sm__3 fcol">
+                <div className="footer__linksTitle" style={{marginLeft:"-3%"}}>
                   <h3>POLICIES</h3>
                 </div>
-                <div class="footer__listLinks">
+                <div className="footer__listLinks">
                   <ul>
                     <li>
                       <a
@@ -361,16 +361,16 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div class="blk" style={{ display: "flex", marginTop: "-1%" }}>
+            <div className="blk" style={{ display: "flex", marginTop: "-1%" }}>
               <div
-                class="blk__xs__12 blk__sm__3"
+                className="blk__xs__12 blk__sm__3"
                 style={{ marginRight: "20%", marginLeft: "5%" }}
               >
-                <div class="footer__linksTitle mt__50">
+                <div className="footer__linksTitle mt__50">
                   <h3>FOLLOW US</h3>
                 </div>
-                <div class="footer__listLinks" >
-                  <ul class="footer__mediaLinks" style={{ display: "flex",marginLeft:"-35%",marginTop:"-20%"}}>
+                <div className="footer__listLinks" >
+                  <ul className="footer__mediaLinks" style={{ display: "flex",marginLeft:"-35%",marginTop:"-20%"}}>
                     <li >
                       <a
                         attr-tag="anchor"
@@ -381,7 +381,7 @@ const Footer = () => {
                         
                       >
                         <i
-                          class="fa fa-facebook-official"
+                          className="fa fa-facebook-official"
                           aria-hidden="true"
                           style={{marginRight:"5%"}}
                         ></i>
@@ -394,7 +394,7 @@ const Footer = () => {
                         target="blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i className="fa fa-twitter" aria-hidden="true"></i>
                       </a>
                     </li>
                     <li>
@@ -404,28 +404,28 @@ const Footer = () => {
                         target="blank"
                         rel="noopener noreferrer"
                       >
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                        <i className="fa fa-youtube" aria-hidden="true"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="blk__xs__12 blk__sm__4">
-                <div class="footer__linksTitle mt__50">
+              <div className="blk__xs__12 blk__sm__4">
+                <div className="footer__linksTitle mt__50">
                   <h3>EXPERIENCE RELIANCE DIGITAL APP ON MOBILE</h3>
                 </div>
                 <div
-                  class="footer__listLinks flex mt__12"
+                  className="footer__listLinks flex mt__12"
                   style={{ display: "flex", marginTop: "-10%", gap: "1%" }}
                 >
-                  <div class="footer__listLinks__downloadLink">
+                  <div className="footer__listLinks__downloadLink">
                     <a
                       attr-tag="anchor"
                       href="https://play.google.com/store/apps/details?id=in.digital.reliance"
                       target=""
                     >
                       <div
-                        class="lazy-load-image-background"
+                        className="lazy-load-image-background"
                         style={{
                           width: "100%",
                           height: "42px",
@@ -441,7 +441,7 @@ const Footer = () => {
                           alt="googlePlayStore"
                           title="googlePlayStore"
                           data-srcset="/build/client/images/google_play_store.png"
-                          class=""
+                          className=""
                           style={{
                             maxHeight: "100%",
                             display: "block",
@@ -453,14 +453,14 @@ const Footer = () => {
                       </div>
                     </a>
                   </div>
-                  <div class="footer__listLinks__downloadLink">
+                  <div className="footer__listLinks__downloadLink">
                     <a
                       attr-tag="anchor"
                       href="https://apps.apple.com/in/app/reliance-digital-shopping-app/id1513379107"
                       target=""
                     >
                       <div
-                        class="lazy-load-image-background"
+                        className="lazy-load-image-background"
                         style={{
                           width: "100%",
                           height: "42px",
@@ -476,7 +476,7 @@ const Footer = () => {
                           alt="AppleStore"
                           title="AppleStore"
                           data-srcset="/build/client/images/ios_app_store_icon.png"
-                          class=""
+                          className=""
                           style={{
                             maxHeight: "100%",
                             display: "block",

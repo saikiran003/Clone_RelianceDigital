@@ -10,6 +10,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Televisions from "./Pages/Televisions";
+import Product from "./Pages/Product";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/television" element={<Televisions/>}/>
+        <Route path="/product" element={<Product/>}/>
       </Routes>
       <Footer />
     </div>

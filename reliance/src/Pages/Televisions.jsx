@@ -1,11 +1,14 @@
 import React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
 import { Carousel } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import { Telvi } from "../Data/Televi";
 
 const Televisions = () => {
   const [product, setProduct] = useState(Telvi);
+  const [max,setMax] = useState("");
+  const [min,setMin] = useState("");
+  const navigate = useNavigate() 
 
   const handleSort = (e) => {
     const value = e.target.value;
@@ -13,7 +16,7 @@ const Televisions = () => {
       const updatedProducts = [...product].sort((a, b) => a.price - b.price);
       setProduct(updatedProducts);
     }
-    if (value == "h2l") {
+    if (value === "h2l") {
       const updatedProducts = [...product].sort((a, b) => b.price - a.price);
       setProduct(updatedProducts);
     }
@@ -38,7 +41,77 @@ const Televisions = () => {
       const updatedProducts = [...product].filter((x)=>x.brand==="Karbonn")
       setProduct(updatedProducts)
     }
+    if(value==="Kodak")
+    {
+      const updatedProducts = [...product].filter((x)=>x.brand==="Kodak")
+      setProduct(updatedProducts)
+    }
+    if(value==="Toshiba")
+    {
+      const updatedProducts = [...product].filter((x)=>x.brand==="Toshiba")
+      setProduct(updatedProducts)
+    }
+    if(value==="LG")
+    {
+      const updatedProducts = [...product].filter((x)=>x.brand==="LG")
+      setProduct(updatedProducts)
+    }
+    if(value==="ONEPLUS")
+    {
+      const updatedProducts = [...product].filter((x)=>x.brand==="ONEPLUS")
+      setProduct(updatedProducts)
+    }
+    if(value==="Sansui")
+    {
+      const updatedProducts = [...product].filter((x)=>x.brand==="Sansui")
+      setProduct(updatedProducts)
+    }
+    if(value==="Hisense")
+    {
+      const updatedProducts = [...product].filter((x)=>x.brand==="Hisense")
+      setProduct(updatedProducts)
+    }
+    if(value==="Sony")
+    {
+      const updatedProducts = [...product].filter((x)=>x.brand==="Sony")
+      setProduct(updatedProducts)
+    }
+    if(value==="IFFALCON")
+    {
+      const updatedProducts = [...product].filter((x)=>x.brand==="IFFALCON")
+      setProduct(updatedProducts)
+    }
+    if(value==="50")
+    {
+      const updatedProducts = [...product].filter((x)=>x.dis>=50)
+      setProduct(updatedProducts)
+    }
+    if(value==="40")
+    {
+      const updatedProducts = [...product].filter((x)=>x.dis>=40 && x.dis<50)
+      setProduct(updatedProducts)
+    }
+    if(value==="20")
+    {
+      const updatedProducts = [...product].filter((x)=>x.dis>=20 && x.dis<40)
+      setProduct(updatedProducts)
+    }
+    if(value==="10")
+    {
+      const updatedProducts = [...product].filter((x)=>x.dis>=10 && x.dis<20)
+      setProduct(updatedProducts)
+    }
+    if(!e.target.checked)
+    {
+      setProduct(Telvi)
+    }
 
+  }
+
+  const handleItem = (item)=>{
+    localStorage.setItem("product",JSON.stringify(item))
+    navigate("/product")
+    
   }
   return (
     <div>
@@ -83,7 +156,7 @@ const Televisions = () => {
       </div>
       <div className="home">
         <i
-          class="fa fa-home"
+          className="fa fa-home"
           aria-hidden="true"
           style={{ fontSize: "10px", marginTop: "5px" }}
         ></i>
@@ -91,7 +164,7 @@ const Televisions = () => {
       </div>
       <div className="tv">
         <div>
-          <h3 class="filters">FILTERS</h3>
+          <h3 className="filters">FILTERS</h3>
           <div>
             <h4 className="rs">Price</h4>
             <div className="slider">
@@ -104,6 +177,8 @@ const Televisions = () => {
                 min="0"
                 max="55000"
                 value="6500"
+                onChange={(e)=>setMin(e.target.value)}
+
               />
               <input
                 type="range"
@@ -111,14 +186,15 @@ const Televisions = () => {
                 min="0"
                 max="55000"
                 value="55000"
+                onChange={(e)=>setMax(e.target.value)}
               />
             </div>
             <div className="slider_input">
               <p>Min</p>
-              <input type="number" value="6500" />
+              <input type="number" value="6500" onChange={(e)=>setMin(e.target.value)}/>
               <p>to</p>
               <p>Max</p>
-              <input type="number" value="55000" />
+              <input type="number" value="55000" onChange={(e)=>setMax(e.target.value)}/>
             </div>
           </div>
           <div className="brands">
@@ -129,35 +205,35 @@ const Televisions = () => {
                 <span className="brand-name">Karbonn</span>
               </div>
               <div className="checkbox">
-                <input type="checkbox" value="Kodak" />
+                <input type="checkbox" value="Kodak" onChange={handleFilter} />
                 <span className="brand-name">Kodak</span>
               </div>
               <div className="checkbox">
-                <input type="checkbox" value="Toshiba" />
+                <input type="checkbox" value="Toshiba" onChange={handleFilter}/>
                 <span className="brand-name">Toshiba</span>
               </div>
               <div className="checkbox">
-                <input type="checkbox" value="LG" />
+                <input type="checkbox" value="LG" onChange={handleFilter} />
                 <span className="brand-name">LG</span>
               </div>
               <div className="checkbox">
-                <input type="checkbox" value="ONEPLUS" />
+                <input type="checkbox" value="ONEPLUS"  onChange={handleFilter}/>
                 <span className="brand-name">One Plus</span>
               </div>
               <div className="checkbox">
-                <input type="checkbox" value="Sansui" />
+                <input type="checkbox" value="Sansui" onChange={handleFilter}/>
                 <span className="brand-name">Sansui</span>
               </div>
               <div className="checkbox">
-                <input type="checkbox" value="Hisense" />
+                <input type="checkbox" value="Hisense" onChange={handleFilter}/>
                 <span className="brand-name">Hisense</span>
               </div>
               <div className="checkbox">
-                <input type="checkbox" value="Sony" />
+                <input type="checkbox" value="Sony" onChange={handleFilter}/>
                 <span className="brand-name">Sony</span>
               </div>
               <div className="checkbox">
-                <input type="checkbox" value="IFFALCON" />
+                <input type="checkbox" value="IFFALCON" onChange={handleFilter}/>
                 <span className="brand-name">Iffalcon</span>
               </div>
             </form>
@@ -165,19 +241,19 @@ const Televisions = () => {
           <div className="brands">
             <h4 className="rs">Discount Percent</h4>
             <div className="checkbox">
-              <input type="checkbox" value="60%" />
-              <span className="brand-name">60% or more</span>
+              <input type="checkbox" value="50" onChange={handleFilter}/>
+              <span className="brand-name">50% or more</span>
             </div>
             <div className="checkbox">
-              <input type="checkbox" value="40%" />
-              <span className="brand-name">40% to 60%</span>
+              <input type="checkbox" value="40" onChange={handleFilter} />
+              <span className="brand-name">40% to 50%</span>
             </div>
             <div className="checkbox">
-              <input type="checkbox" value="20%" />
+              <input type="checkbox" value="20" onChange={handleFilter}/>
               <span className="brand-name">20% to 40%</span>
             </div>
             <div className="checkbox">
-              <input type="checkbox" value="10%" />
+              <input type="checkbox" value="10" onChange={handleFilter}/>
               <span className="brand-name">10% to 20%</span>
             </div>
           </div>
@@ -217,12 +293,12 @@ const Televisions = () => {
                   className="list-inline"
                   style={{ display: "flex", gap: "10px" }}
                 >
-                  <li class="">
+                  <li className="">
                     <span>
                       <div className="fa fa-bars"></div>
                     </span>
                   </li>
-                  <li class="active">
+                  <li className="active">
                     <span>
                       <div className="fa fa-th-large"></div>
                     </span>
@@ -236,7 +312,7 @@ const Televisions = () => {
               return (
                 <div
                   style={{ border: "1px solid #e0e0e1", height: "328px" }}
-                  key={item.id}
+                  key={item.id} onClick={()=>handleItem(item)}
                 >
                   <div
                     style={{
@@ -327,7 +403,7 @@ const Televisions = () => {
                       }}
                     >
                       <i
-                        class="fa fa-heart-o"
+                        className="fa fa-heart-o"
                         aria-hidden="true"
                         style={{ marginRight: "8px" }}
                       ></i>

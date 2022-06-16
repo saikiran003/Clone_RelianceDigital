@@ -69,6 +69,7 @@ export const Telvi = [
         price:17990.00,
         mrp:"20,990.00",
         discount:"14%(₹3,000)",
+        dis:14,
         brand:"LG"
     },
     {
@@ -78,6 +79,7 @@ export const Telvi = [
         price:15499.00,
         mrp:"19,999.00",
         discount:"23%(₹4,500)",
+        dis:23,
         brand:"ONEPLUS"
     },
     {
@@ -87,6 +89,7 @@ export const Telvi = [
         price:22999.00,
         mrp:"30,990.00",
         discount:"26%(₹7,991)",
+        dis:26,
         brand:"Sansui"
     },
     {
@@ -96,6 +99,7 @@ export const Telvi = [
         price:29990.00,
         mrp:"36,990.00",
         discount:"19%(₹7,000)",
+        dis:19,
         brand:"Hisense"
     },
     {
@@ -105,6 +109,7 @@ export const Telvi = [
         price:33990.00,
         mrp:"40,990.00",
         discount:"17%(₹7,000)",
+        dis:17,
         brand:"LG"
     },
     {
@@ -114,6 +119,7 @@ export const Telvi = [
         price:24990.00,
         mrp:"39,990.00",
         discount:"38%(₹15,000)",
+        dis:38,
         brand:"Hisense"
     },
     {
@@ -123,6 +129,7 @@ export const Telvi = [
         price:22990.00,
         mrp:"37,999.00",
         discount:"39%(₹15,009)",
+        dis:39,
         brand:"Kodak"
     },
     {
@@ -132,6 +139,7 @@ export const Telvi = [
         price:11499.00,
         mrp:"15,000.00",
         discount:"23%(₹3,501)",
+        dis:23,
         brand:"BPL"
     },
     {
@@ -141,6 +149,7 @@ export const Telvi = [
         price:21999.00,
         mrp:"29,999.00",
         discount:"27%(₹8,000)",
+        dis:27,
         brand:"MI"
     },
     {
@@ -150,6 +159,7 @@ export const Telvi = [
         price:54999.00,
         mrp:"70,499.00",
         discount:"22%(₹15,500)",
+        dis:22,
         brand:"Kodak"
     },
     {
@@ -159,6 +169,7 @@ export const Telvi = [
         price:25990.00,
         mrp:"31,990.00",
         discount:"19%(₹6,000)",
+        dis:19,
         brand:"Toshiba"
     },
     {
@@ -168,6 +179,7 @@ export const Telvi = [
         price:13999.00,
         mrp:"24,999.00",
         discount:"44%(₹11,000)",
+        dis:44,
         brand:"Redmi"
     },
     {
@@ -177,6 +189,7 @@ export const Telvi = [
         price:8999.00,
         mrp:"11,490.00",
         discount:"22%(₹2,491)",
+        dis:22,
         brand:"Sansui"
     },
     {
@@ -186,6 +199,7 @@ export const Telvi = [
         price:21990.00,
         mrp:"45,990.00",
         discount:"52%(₹24,000)",
+        dis:52,
         brand:"IFFALCON"
     },
     {
@@ -195,6 +209,7 @@ export const Telvi = [
         price:22999.00,
         mrp:"33,999.00",
         discount:"32%(₹11,000)",
+        dis:32,
         brand:"Kodak "
     },
     {
@@ -204,6 +219,7 @@ export const Telvi = [
         price:9999.00,
         mrp:"16,990.00",
         discount:"41%(₹6,991)",
+        dis:41,
         brand:"Kodak"
     },
     {
@@ -213,6 +229,7 @@ export const Telvi = [
         price:27990.00,
         mrp:"34,900.00",
         discount:"20%(₹6,910)",
+        dis:20,
         brand:"Sony"
     },
 ]
