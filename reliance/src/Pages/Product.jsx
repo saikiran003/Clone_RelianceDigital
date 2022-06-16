@@ -1,13 +1,18 @@
 import React from "react";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addItem } from "../redux/action";
 
 const Product = () => {
   const [compare,setCompare] = useState("")
-  const [PIN,setPIN] =useState("")
+  const [PIN,setPIN] =useState("");
+  const dispatch = useDispatch()
 
   const product = JSON.parse(localStorage.getItem("product"))
-  const handleAdd = ()=>{
-    console.log("yes")
+  const handleAdd = (product)=>{
+    console.log(product)
+    dispatch(addItem(product))
+    alert("Product has been added to cart")
   }
   return (
     <div>
@@ -317,7 +322,7 @@ const Product = () => {
               {/* add to cart buttons */}
               <div className="pdp__addToCartSection">
                 <button
-                onClick={handleAdd}
+                onClick={()=>handleAdd(product)}
                   type="button"
                   id="add_to_cart_main_btn"
                   className="ripple pdp__addToCartSection__addTocartBtn pdp__addToCartSection__addTocartBtn__withBuyNow btn__default pointer"

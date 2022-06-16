@@ -1,10 +1,12 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 const MainHeader = () => {
   const [search, setSearch] = useState("");
   const name = JSON.parse(localStorage.getItem("user"))|| "";
+  const state = useSelector((state)=>state.cart)
   console.log(name)
   const [first,setFirst] = useState("")
   useEffect(()=>{
@@ -49,7 +51,7 @@ const MainHeader = () => {
               marginTop: "5px",
             }}
           ></i>
-          <div className="cartCount">3</div>Cart
+          <div className="cartCount">{state.length}</div>Cart
         </Link>
         <div className="vl"></div>
         <Link to="/login" className="subMainHeader">
