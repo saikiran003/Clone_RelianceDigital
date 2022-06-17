@@ -988,7 +988,6 @@
 }
 .hlVQIa {
     width: 75%;
-    margin-left: 10%;
 }
 .KPCnc {
     position: relative;
@@ -1420,7 +1419,6 @@
 .JtReX{
     width:80%;
     margin: auto;
-    border: 1px solid red;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .KiYtr{
@@ -1447,6 +1445,7 @@
     display: inline-block;
     gap: 25px;
     margin-left: 2.5%;
+    border-bottom: 1px solid #e0e0e1;
 }
 .shippingAddress{
     margin-top: 25px;
@@ -1511,7 +1510,310 @@
     font-weight: 600;
 
 }
+.payment{
+    height:550px;
+    width:95%;
+    margin :auto;
+    display: flex;
+    gap:2%;
+}
+.payFirst{
+    width:20%;
+    border-right: 1px solid #e0e0e1;
+    /* padding: 12px 12px 12px 24px; */
+}
+.payName{
+    color:#333;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: Open Sans,sans-serif;
+    outline: none;
+    margin-left: 12px;
+   
+}
+.KopYTr{
+    border-bottom: 1px solid #e0e0e1;
+    padding: 0px 0px 12px 0px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.paySecond{
+    width:80%;
+   
+}
+.flush{
+    border-bottom: 1px solid #e0e0e1;
+    padding: 12px;
+}
+.pc h3 {
+    color: #004b8e;
+    font-weight: 700;
+    border-bottom: 1px solid #d1d1d1;
+}
+.prp .tabtitle {
+    overflow: hidden;
+}
+.prp__content h3 {
+    margin: 0;
+    font-size: 16px;
+    padding-bottom: 8px;
+}
+.prp img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+.tabtitle{
+    font-size: 16px;
+    color: #004B8E;
+}
+.loYtvU{
+    margin-top: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+.select-dc-bank{
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Open Sans,sans-serif;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    background-size: 7px 5px;
+    margin: 0 0 10px;
+    padding-left: 10px;
+    outline: none;
+    height: 42px;
+    background: #fff;
+    width:42%;
+}
+.mb__10{
+    padding: 12px;
+}
+.MlfoP {
+    position: relative;
+    min-height: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: left;
+    width: 100%;
+}
+.FpxSt {
+    position: relative;
+    min-height: 1px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+.irgGwM {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.bgxIah {
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid rgb(216, 226, 239);
+    background-color: transparent;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    line-height: 26px;
+    outline: none;
+    border-radius: 3px;
+    color: rgb(32, 33, 36);
+    font-size: 15px;
+    height: 42px;
+    padding: 8px 16px;
 
+}
+.hOxJqY .sc-hSdWYo {
+    background-color: rgb(255, 255, 255);
+}
+.dZHLaP {
+    background-color: transparent;
+    top: 14px;
+    box-sizing: border-box;
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+    font-family: roboto, arial, sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+    left: 10px;
+    max-width: calc(100% - 16px);
+    overflow: hidden;
+    padding: 0px 8px;
+    text-overflow: ellipsis;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s, opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    white-space: nowrap;
+    width: auto;
+    pointer-events: none;
+    position: absolute;
+}
+.kkyBkK {
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.deoPuB {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+.FpxSt {
+    position: relative;
+    min-height: 1px;
+    padding: 0px;
+    float: left;
+    width: 100%;
+}
+.XjqYC {
+    position: relative;
+    min-height: 1px;
+    padding: 0px;
+    float: left;
+    width: 66.6667%;
+}
+.gMLAqQ {
+    position: relative;
+    min-height: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: left;
+    width: 100%;
+}
+.prp__content .lform__label {
+    color: #333;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.bgfCZT {
+    position: relative;
+    min-height: 1px;
+    padding-left: 16px;
+    padding-right: 0px;
+    float: left;
+    background-color: #FFF;
+}
+.bruRsM {
+    position: relative;
+    min-height: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: left;
+    width: 58.3333%;
+}
+.kbLYUe {
+    position: relative;
+    min-height: 1px;
+    padding: 0px;
+    float: left;
+    width: 33.3333%;
+}
+.hJOKUk {
+    position: relative;
+    min-height: 1px;
+    padding-right: 16px;
+    padding-left: 0px;
+    float: left;
+    width: 100%;
+}
+.prp .prelative {
+    position: relative;
+}
+.hlVQIa {
+    width: 100%;
+}
+.gKXZYT {
+    position: relative;
+    margin-top: 37px;
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.ljDZkK {
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    cursor: pointer;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+    font-size: 18px;
+}
+.gMLAqQ {
+    position: relative;
+    min-height: 1px;
+    padding-left: 16px;
+    padding-right: 16px;
+    float: left;
+    width: 100%;
+}
+.cardBox{
+    width:50%;
+    background-color: #EFFCF5;
 
+}
+.cardDetails{
+    border-radius: 10px;
+    width:438px;
+    height:225px;
+    padding: 12px;
+    background-color: 
+    #f1f3f7 ;
+}
+.cardDetails>input{
+    width:100%;
+    padding :6px 12px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.cardSelect{
+    width:106px;
+    height:42px;
+    border: none;
+    background:#FFFFFF;
+}
+.payBtn{
+    width:278px;
+    height:38px;
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
 
 
