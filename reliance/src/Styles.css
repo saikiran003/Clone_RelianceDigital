@@ -661,6 +661,12 @@
     margin: 0px 0px 47px; 
     padding: 22px 12px 0px;
 }
+.tvGrid>div{
+    cursor: pointer;
+}
+.tvGrid>div:hover p{
+    color: red;
+}
 .tvGrid p{
     font-size: 15px;
     color: #003380;
